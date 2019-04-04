@@ -1,0 +1,54 @@
+<!-- <div *ngIf="courses.length > 0; else noCourses">
+    We have {{courses.length}} course
+</div>
+<ng-template #noCourses>
+    No course
+</ng-template> -->
+
+<!-- <div [hidden]="!(courses.length > 0)">
+  We have {{courses.length}} course
+</div>
+<div [hidden]="!(courses.length == 0)">
+    No course
+</div> -->
+
+<!-- <ul class="nav nav-pills">
+<li [class.active]="viewModel==='map'"><a (click)="viewModel='map'">Map View</a></li>
+<li [class.active]="viewModel==='list'"><a (click)="viewModel='list'">List View</a></li>
+</ul>
+<div [ngSwitch]="viewModel">
+    <div *ngSwitchCase="'map'">Map View Content</div>
+    <div *ngSwitchCase="'list'">List View Content</div>
+    <div *ngSwitchDefault>Otherwise</div>
+</div>
+-->
+<!-- 
+   <button class='but btn-primary' (click)="loadingCourses()">Load</button>
+   <button class='but btn-primary' (click)="onAdd()">Add</button>
+   <ul>
+     <li *ngFor="let course of courses;index as i;trackBy: trackCourse">
+       {{i}} - {{course.name}} <button class='but btn-primary' (click)="onRemove(course)">Delete</button>
+     </li>
+   </ul> 
+-->
+
+<!-- 
+<span
+class="glyphicon"
+[ngClass]="{
+  'glyphicon-star': isSelected,
+  'glyphicon-star-empty': !isSelected
+}"
+(click)="isSelected = !isSelected"
+></span> -->
+
+<!-- 
+<button
+[ngStyle]="{
+  'color': canSave ? 'white': 'red',
+  'backgroundColor': canSave ? 'blue' : 'gray'
+}"
+(click)="canSave = !canSave"
+>Save</button> -->
+
+<input type="Text" [(ngModel)]="inputValue" [customFormat]="'lowercase'" (keyup.Enter)="onClick($event)">

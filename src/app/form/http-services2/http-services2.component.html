@@ -1,0 +1,8 @@
+<input type="type" class="form-control" #f (keyup.enter)="onCreate(f)">
+<ul class="list-gruop">
+  <li class="list-group-item" *ngFor="let item of result">
+    <button class="btn btn-primary" (click)="onUpdate(item)">Update</button>
+    {{item.title}}
+    <button class="btn btn-primary" (click)="onDelete(item)">Delete</button>
+  </li>
+</ul>

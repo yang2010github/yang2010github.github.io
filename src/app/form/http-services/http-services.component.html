@@ -1,0 +1,11 @@
+<input type="text" class="form-control" #f (keyup.enter)="onkeyup(f)" >
+<ul class="list-group">
+  <li 
+    *ngFor="let item of result"
+    [value]="item.id"
+    class="list-group-item">
+    <button class="btn btn-primary" (click)="onUpdate(item)">Update</button>
+    {{item.title}}
+    <button class="btn btn-primary" (click)="onDelete(item)">Delete</button>
+  </li>
+</ul>
